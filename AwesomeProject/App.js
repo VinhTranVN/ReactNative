@@ -17,7 +17,7 @@ class Blink extends React.Component {
     render() {
         let display = this.state.showText ? this.props.text : ' ';
         return (
-            <Text>{display}</Text>
+            <Text style={styles.red}>{display}</Text>
         );
     }
 }
@@ -54,4 +54,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    red: {
+        color: 'red',
+    }
 });
